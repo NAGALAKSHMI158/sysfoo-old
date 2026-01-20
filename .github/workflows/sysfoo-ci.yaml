@@ -15,9 +15,12 @@ jobs:
         
       - name: clean package
         run: mvn clean
-
+        
+      - name: Install Package
+        run: mvn package
+        
       - name: view the file
         run: ls -lrt
-      - name: mvn package
-        run: mvn package
+        
+    
       
